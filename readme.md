@@ -41,7 +41,7 @@ ng update ngx-build-plus --force
 
 - ``ng build --single-bundle``: Puts everything reachable from the main entry point into one bundle. Polyfills, scripts, and styles stay in their own bundles as the consuming application might have its own versions of these.
 
-### Schamtics
+### Schematics
 
 - ``ng add ngx-build-plus``
 - ``ng g ngx-build-plus:wc-polyfill``: Adds webcomponent polyfills to your app 
@@ -108,11 +108,11 @@ Please find the example shown here in the sample application in the folder ``pro
 
 ## ngx-build-plus and Angular Elements
 
-While ``ngx-build-plus`` can be used in every Angular configuration, it also comes with some schematics automating some scenarios for Angular Elements. More information about can be found [here](https://www.softwarearchitekt.at/post/2019/01/27/building-angular-elements-with-the-cli.aspx).
+While ``ngx-build-plus`` can be used in every Angular configuration, it also comes with the schematics for automation of some scenarios for Angular Elements. More information about can be found [here](https://www.softwarearchitekt.at/post/2019/01/27/building-angular-elements-with-the-cli.aspx).
 
 ## Using Plugins
 
-Plugins allow you to provide some custom code that modifies your webpack configuration. In addition to that, they also provide a pre- and a post-hook for tasks that need to take happen before and after bundling. This is an example for an plugin:
+Plugins allow you to provide a custom code that modifies your webpack configuration. In addition to that, they also provide a pre- and a post-hook for tasks that needs to happen before and/or after bundling. This is an example for such plugin:
 
 ```typescript
 export default {
